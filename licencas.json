@@ -3,7 +3,7 @@
   "licenses": {
     "ESPETARIADOZE": {
       "client": "Espetaria do Zé",
-      "status": "bloqued",
+      "status": "active",
       "expiresAt": "2026-12-19",
       "message": "O período de demonstração terminou. Para continuar usando o Comandaria, fale com a gente."
     }
