@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade · Comandaria</title>
+<meta name="description" content="Política de Privacidade do aplicativo Comandaria para Android.">
+<style>
+  :root {
+    --bg: #f6f6f3; --surface: #ffffff; --ink: #1d221b; --ink2: #474e44; --line: #e4e6df;
+    --brand: #3f6b47; --brand-strong: #2f5536; --brand-soft: #e5eee3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121511; --surface: #1a1e19; --ink: #eef1ea; --ink2: #c5cbc0; --line: #30362e;
+      --brand: #8fc79a; --brand-strong: #d5ebd8; --brand-soft: #2b4a31;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; color: var(--brand-strong); }
+  .meta { color: var(--ink2); font-size: .95rem; margin: 0; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; color: var(--brand-strong); }
+  h3 { font-size: 1rem; margin: 20px 0 4px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.25rem; }
+  li { margin: 4px 0; }
+  .summary {
+    background: var(--brand-soft); border-radius: 14px; padding: 16px 20px; margin: 0 0 8px;
+  }
+  .summary ul { margin: 8px 0 0; }
+  .muted { color: var(--ink2); }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 12px; overflow: hidden; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { background: var(--brand-soft); }
+  tr:last-child td { border-bottom: 0; }
+  .table-wrap { overflow-x: auto; }
+  a { color: var(--brand); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink2); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Política de Privacidade do Comandaria</h1>
+    <p class="meta">Aplicativo Comandaria para Android · Animosfera Studio · Última atualização: 19 de novembro de 2026</p>
+  </header>
+
+  <div class="summary">
+    <strong>Em resumo</strong>
+    <ul>
+      <li>O Comandaria é um sistema de comandas para restaurantes e lanchonetes, usado pela equipe do estabelecimento.</li>
+      <li>Os dados ficam no próprio aparelho ou no servidor do próprio estabelecimento. Nós, desenvolvedores, não recebemos esses dados.</li>
+      <li>Não usamos anúncios, ferramentas de análise ou rastreamento, e não vendemos dados.</li>
+      <li>A única comunicação com um serviço nosso é a verificação da licença de uso, que envia apenas o código de ativação.</li>
+    </ul>
+  </div>
+
+  <h2>1. Quem somos</h2>
+  <p>
+    Esta política se aplica ao aplicativo <strong>Comandaria</strong> (pacote <code>com.animosfera.comandaria</code>),
+    desenvolvido pela <strong>Animosfera Studio</strong> ("nós"). Ela explica quais dados o aplicativo trata, para quê,
+    onde ficam guardados e quais são os seus direitos, de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, LGPD).
+  </p>
+  <p>
+    O aplicativo é usado por estabelecimentos (restaurantes, lanchonetes e similares) e pela sua equipe. Em relação aos dados
+    da operação do estabelecimento, <strong>o estabelecimento é o controlador</strong>: é ele quem decide o que cadastrar e por quanto tempo manter.
+  </p>
+
+  <h2>2. Dados tratados pelo aplicativo</h2>
+
+  <h3>2.1 Contas da equipe</h3>
+  <ul>
+    <li>Nome, nome de usuário e perfil de acesso (administrador, gerente, caixa, garçom ou cozinha) dos membros da equipe.</li>
+    <li>Senha de acesso. No modo "Tudo em um", a senha é guardada apenas como <em>hash</em> (não é possível recuperá-la a partir do que fica salvo).
+      No modo conectado ao servidor do estabelecimento, a senha é conferida por esse servidor e o aparelho pode guardar uma cópia
+      cifrada com uma chave do Android Keystore, que nunca sai do aparelho, apenas para renovar a sessão automaticamente.</li>
+  </ul>
+
+  <h3>2.2 Dados da operação do estabelecimento</h3>
+  <ul>
+    <li>Cardápio: produtos, categorias, preços e fotos dos produtos escolhidas pelo usuário.</li>
+    <li>Mesas, comandas, itens pedidos, observações dos pedidos e o nome de quem lançou cada pedido.</li>
+    <li>Pagamentos: forma de pagamento e valores. <strong>O aplicativo não processa nem guarda dados de cartão.</strong></li>
+    <li>Caixa (abertura, sangria, suprimento e fechamento), estoque e relatórios de vendas.</li>
+  </ul>
+  <p>
+    O aplicativo não pede nome, telefone, documento ou qualquer outro dado dos clientes atendidos pelo estabelecimento.
+    Se a equipe digitar alguma informação de cliente em campos livres (por exemplo, numa observação ou no apelido de uma mesa),
+    isso fica sob responsabilidade do estabelecimento.
+  </p>
+
+  <h3>2.3 Licença de uso</h3>
+  <p>
+    Para funcionar, o aplicativo precisa ser ativado com um código fornecido por nós. O aplicativo consulta periodicamente um arquivo
+    de licenças hospedado no GitHub (<code>raw.githubusercontent.com</code>) e compara o código digitado com esse arquivo.
+    O código e o resultado da consulta ficam salvos no aparelho. Nenhum dado de uso, da equipe ou da operação é enviado nessa consulta.
+    Como em qualquer acesso à internet, o GitHub recebe dados técnicos da conexão, como o endereço IP, conforme a
+    <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">política de privacidade do GitHub</a>.
+  </p>
+
+  <h3>2.4 O que o aplicativo não coleta</h3>
+  <ul>
+    <li>Localização, contatos, mensagens, câmera, microfone ou arquivos do aparelho (exceto as fotos e arquivos que o usuário escolher).</li>
+    <li>Identificadores de publicidade, dados de navegação ou estatísticas de uso.</li>
+    <li>Não há anúncios nem bibliotecas de análise, rastreamento ou publicidade de terceiros.</li>
+  </ul>
+
+  <h2>3. Para que usamos os dados</h2>
+  <ul>
+    <li>Fazer o aplicativo funcionar: lançar pedidos, enviar à cozinha, fechar contas, controlar caixa e estoque e mostrar relatórios.</li>
+    <li>Controlar o acesso de cada membro da equipe conforme o seu perfil.</li>
+    <li>Verificar se a licença de uso está ativa.</li>
+  </ul>
+  <p>
+    As bases legais são a execução do contrato com o estabelecimento e o legítimo interesse em proteger o acesso ao aplicativo
+    (art. 7º, incisos V e IX, da LGPD).
+  </p>
+
+  <h2>4. Onde os dados ficam</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Modo de uso</th><th>Onde os dados ficam</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Tudo em um</strong></td>
+        <td>Somente no próprio aparelho, num banco de dados interno do aplicativo.</td>
+      </tr>
+      <tr>
+        <td><strong>App e Retaguarda</strong></td>
+        <td>No servidor do próprio estabelecimento (normalmente um computador no caixa), acessado pela rede local.
+          O aparelho guarda uma cópia temporária para continuar funcionando se a conexão cair.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Em nenhum dos modos os dados da operação ou da equipe são enviados para servidores nossos.</p>
+
+  <h2>5. Cópias de segurança</h2>
+  <ul>
+    <li><strong>Backup automático do Android:</strong> se o backup estiver ativado no aparelho, o Android pode guardar na conta Google do usuário
+      uma cópia do banco do modo "Tudo em um", das fotos dos produtos e das preferências do aplicativo. Senhas, sessão e o código de licença
+      não fazem parte dessa cópia. Esse backup é feito pelo Google, conforme a
+      <a href="https://policies.google.com/privacy?hl=pt-BR" rel="noopener">Política de Privacidade do Google</a>, e pode ser desativado nas configurações do aparelho.</li>
+    <li><strong>Backup manual:</strong> o usuário pode exportar um arquivo de backup (.zip) e escolher onde salvá-lo. A partir daí, o arquivo fica sob responsabilidade de quem o salvou.</li>
+  </ul>
+
+  <h2>6. Compartilhamento</h2>
+  <p>
+    Não vendemos, alugamos nem compartilhamos os dados com terceiros. Os únicos serviços externos envolvidos são o GitHub, na verificação da licença,
+    e o Google, no backup automático do Android quando ativado e na distribuição pelo Google Play.
+    Podemos ser obrigados a fornecer informações por ordem judicial ou exigência legal.
+  </p>
+
+  <h2>7. Permissões do Android</h2>
+  <ul>
+    <li><strong>Internet e estado da rede:</strong> conectar ao servidor do estabelecimento, verificar a licença e saber quando a conexão volta.</li>
+    <li><strong>Vibração:</strong> avisar quando um pedido fica pronto ou chega à cozinha.</li>
+    <li>As fotos dos produtos são escolhidas pelo seletor de fotos do próprio Android. O aplicativo não tem acesso à galeria inteira.</li>
+  </ul>
+
+  <h2>8. Segurança</h2>
+  <p>
+    As senhas são guardadas como <em>hash</em> ou cifradas com o Android Keystore, e os dados do aplicativo ficam na área privada do aparelho,
+    inacessível a outros aplicativos. A verificação da licença usa conexão criptografada (HTTPS). No modo "App e Retaguarda", a comunicação com o servidor
+    do estabelecimento acontece na rede local e pode não ser criptografada; por isso, recomendamos usar uma rede Wi-Fi protegida por senha e
+    restrita à equipe.
+  </p>
+
+  <h2>9. Por quanto tempo os dados ficam guardados</h2>
+  <ul>
+    <li>Os dados ficam guardados enquanto o estabelecimento usar o aplicativo ou até serem apagados.</li>
+    <li>Desinstalar o aplicativo ou usar "Limpar dados" nas configurações do Android apaga os dados guardados no aparelho.</li>
+    <li>Dados no servidor do estabelecimento são mantidos e apagados pelo próprio estabelecimento.</li>
+    <li>Se a licença for suspensa ou vencer, o aplicativo fica bloqueado, mas os dados <strong>não</strong> são apagados.</li>
+  </ul>
+
+  <h2>10. Seus direitos</h2>
+  <p>
+    Pela LGPD, você pode pedir confirmação de tratamento, acesso, correção, anonimização, portabilidade ou exclusão dos seus dados, além de informações
+    sobre compartilhamento. Como os dados ficam com o estabelecimento, pedidos sobre dados cadastrados no aplicativo (por exemplo, a sua conta
+    de funcionário) devem ser feitos ao estabelecimento em que você trabalha. Para dúvidas sobre esta política ou sobre a licença de uso, fale conosco
+    pelo contato abaixo.
+  </p>
+
+  <h2>11. Crianças</h2>
+  <p>O aplicativo é uma ferramenta de trabalho para estabelecimentos e não é destinado a menores de 18 anos.</p>
+
+  <h2>12. Alterações nesta política</h2>
+  <p>Podemos atualizar esta política. A versão em vigor fica sempre nesta página, com a data da última atualização no topo.</p>
+
+  <h2>13. Contato</h2>
+  <p>
+    <strong>Animosfera Studio</strong><br>
+    WhatsApp: (34) 99151-2103
+  </p>
+
+  <footer>Comandaria · Animosfera Studio</footer>
+</main>
+</body>
+</html>
